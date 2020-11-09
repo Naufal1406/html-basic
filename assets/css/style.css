@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(90deg, gray white);
+}
+
+/*Navigation Container*/
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(90deg, rgba(43, 164, 231,.1) 25%, white 75%);    
+    position: fixed;
+    width: 100%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 5px 10px -10px gray;
+}
+
+.nav-item {
+    flex: 50%;    
+}
+
+.logo {
+    float: left;
+    padding-left: 35px;
+    font-size: 100px;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.85);
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+.nav-bar ul li {
+    display: inline;
+    margin: 2px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 75px;     
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 5px 10px;
+    margin: 3px;
+    background-color: rgba(43, 164, 231,.5);
+    border-radius: 25px;
+    transition: .5s ;          
+}
+
+.nav-bar ul li a:hover {
+    font-size: 35px;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px gray; 
+}
+
+/*Banner Container*/
+
+.banner-container {
+    padding-top: 100px;
+    width: 100%;
+    height: 525px;
+    box-shadow: 0px 30px 10px -20px rgb(189, 189, 189);
+    background: linear-gradient(90deg, rgba(43, 164, 231,.5) 50%, white 50%);
+}
+
+.banner-item {
+    text-align: center;
+    font-size: 35px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    color: whitesmoke;
+}
+
+.icon-banner i {
+    font-size: 250px;
+    color: white;
+    background: linear-gradient(-90deg, rgba(43, 164, 231,.5) 50%, white 50%);
+    text-shadow: -1px -2px 5px rgba(43, 164, 231,.5), 1px 2px 5px white;
+}
+
+.banner-item h1 {
+    text-shadow: 7px 2px 2px white;
+    color: black;
+}
+
+.banner-item span {
+    text-shadow: 7px 2px 2px rgba(43, 164, 231,.5);
+    
+}
+
+.learn-btn a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    background-color: rgba(43, 164, 231,.5);
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-right: 75px;
+    margin-left: 75px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    transition: .5s ;  
+}
+
+.learn-btn a:hover {
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px gray;
+    padding-top: 10px; 
+}
+
+
+/*Section Greeting*/
+.greeting-container {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+
+}
+
+.greeting-item {
+    flex: 50%;
+    width: 50%;
+}
+
+.say-hello {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 150px;
+    transition: 0.5s;
+    font-family: 'Satisfy', cursive;
+}
+
+.say-hello h6:hover {
+    text-shadow: 5px 5px 2px yellow;
+    font-size: 50px;
+    
+}
+.pct1{
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.shape img {
+    border-radius: 50%;
+    box-shadow: inset 100px 2px 3px 5px gray;
+}
+
+
+/*Section About Me*/
+.aboutme-container {
+    height: 500px;
+    background: linear-gradient(90deg, rgba(43, 164, 231,.5) 5% , white 75%);
+}
+
+.aboutme-item {
+    text-align: center;
+
+}
+
+.title1 h2 {
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: 'Passion One', cursive;
+    margin-top: 20px;
+}
+
+.content1 p {
+    margin: 50px 150px;
+    font-size: 45px;
+    width: 85%;
+    text-align: center;
+    font-family: 'Handlee', cursive;
+}
+
+hr.hr-title {
+    background-color: rgb(137, 186, 255);
+    width: 50px;
+    height: 5px;
+    margin: 2px auto;
+    border: none;
+}
+
+/*Section My Experience*/
+.exper-container {
+    background: linear-gradient(-90deg, rgba(43, 164, 231,.5) 5% , white 75%);
+    height: 500px;
+    transition: .8s;
+    display: flex;
+    flex-direction: row;
+}
+
+h2.exper-title {
+    transition: .8s;
+    text-align: center;
+    padding: 200px 0 0;
+    display: block;
+}
+
+h2.exper-title:hover {
+    padding-top: 180px;
+    font-size: 85px;
+}
+
+.exper-item {
+    flex: 50%;
+    margin: 0 30px;
+}
+
+.exper-item img {
+    text-align: center;
+    padding-top: 30px ;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+
+p.desc {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+/*Section My Skill*/
+
+.skill-container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 50px;
+    background: linear-gradient(180deg, rgba(43, 164, 231,.5) 5% , white 75%);
+}
+
+.skill-item {
+    flex: 50%;
+    padding: 50px 150px 0;
+    margin: 0 20px;
+}
+
+h2.skill-title {
+    transition: .8s;
+    padding-left: 10px;
+}
+.skill-title .hr-title {
+    margin-bottom: 20px;
+}
+
+.icon-skill i {
+    font-size: 175px;
+    color: black;
+    text-shadow: 25px -10px 20px  whitesmoke;
+}
+
+/* Section My Portfolio*/
+.port-title h4 {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Passion One', cursive;
+    padding-top: 20px;
+}
+
+.port-container {
+    display: flex;
+}
+
+.port-item {
+    flex: 50%;
+    width: 20px;
+    height: 400px;
+    background-color: white;
+    margin: 0 30px;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    margin-top: 20px;
+    box-shadow: 0 5px 20px 2px gray;
+}
+
+.port-item .content3 {
+    padding: 95px;
+}
+
+.port-item .icon-port {
+    font-size: 100px;
+}
+
+.port-item p {
+    margin: 12px;
+    font-size: 12px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: white;
+    padding-top: 30px;
+}
+footer .copyright {
+    background-color: white;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+footer .icon-footer i{
+    color:gray; 
+    font-size: 50px;
+    margin: 0 25px;
+    background-color: white;
+    transition: .5s;
+}
+.icon-footer i:hover {
+    font-size: 75px;
+    color: silver;
+}
+
